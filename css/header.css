@@ -18,6 +18,9 @@ header {
   padding-block: 2rem;
   margin: 0;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .navbar__nav-lists {
@@ -26,7 +29,7 @@ header {
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .navbar__nav-lists-wrapper.active {
@@ -48,9 +51,9 @@ header {
 
 .overlay {
   position: fixed;
-  inset: 0;
   pointer-events: none;
   opacity: 0;
+  inset: 0;
 }
 
 .overlay.open {
@@ -81,11 +84,15 @@ header {
     background-color: var(--neutral-off-white);
     padding-block: 0;
     margin: 0;
+    flex-direction: row;
   }
   .navbar__nav-lists {
     display: flex;
     flex-direction: row;
     font-size: 0.825rem;
+  }
+  .overlay {
+    display: none;
   }
 }
 

@@ -14,6 +14,7 @@ main {
 .home__primary-title {
   font-size: 3rem;
   margin: 0;
+  font-weight: 800;
 }
 
 .primary-description {
@@ -32,7 +33,7 @@ main {
   padding: 1rem 2rem;
   color: var(--neutral-very-dark-blue);
   background-color: var(--primary-soft-red);
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   cursor: pointer;
@@ -45,7 +46,7 @@ main {
 
 .home__secondary {
   background-color: var(--neutral-very-dark-blue);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-block: 3rem;
 }
 
@@ -56,10 +57,16 @@ main {
 .home__secondary h2 {
   font-size: 2rem;
   color: var(--primary-soft-orange);
+  margin-block-start: 0.5rem;
 }
 
-.home__secondary h3 {
+.home__secondary a {
+  text-decoration: none;
   color: var(--neutral-off-white);
+}
+
+.home__secondary a:hover {
+  color: var(--primary-soft-orange);
 }
 
 .home__secondary p {
@@ -76,6 +83,12 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.home__footer-desc .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .home__footer-desc img {
@@ -112,7 +125,7 @@ main {
 @media all and (width > 62.5rem) {
   .home.container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .home__primary-img {
@@ -124,7 +137,7 @@ main {
     margin-block: 0;
   }
   .home__footer-desc {
-    margin-top: 1rem;
+    margin-top: auto;
   }
 }
 
@@ -134,7 +147,8 @@ main {
       background 0.2s ease,
       color 0.2s ease;
   }
-  .home__footer-desc a {
+  .home__footer-desc a,
+  .home__secondary a {
     transition: color 0.2s ease;
   }
 }
