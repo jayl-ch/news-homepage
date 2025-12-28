@@ -10,7 +10,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -38,3 +37,4 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Accessibility best practices
